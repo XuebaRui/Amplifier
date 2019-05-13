@@ -4,18 +4,18 @@
 #include "stm32f10x.h"
 
 #define CFG(a)   if(a) \
-											GPIO_SetBits(GPIOD,GPIO_Pin_7); \
+											GPIO_SetBits(GPIOA,GPIO_Pin_1); \
 										else \
-											GPIO_ResetBits(GPIOD,GPIO_Pin_7); 
+											GPIO_ResetBits(GPIOA,GPIO_Pin_1); 
 #define WDI(a)   if(a) \
-											GPIO_SetBits(GPIOB,GPIO_Pin_5); \
+											GPIO_SetBits(GPIOA,GPIO_Pin_4); \
 										else \
-											GPIO_ResetBits(GPIOB,GPIO_Pin_5); 
+											GPIO_ResetBits(GPIOA,GPIO_Pin_4); 
 										
 #define RST(a)   if(a) \
-											GPIO_SetBits(GPIOB,GPIO_Pin_3); \
+											GPIO_SetBits(GPIOA,GPIO_Pin_0); \
 										else \
-											GPIO_ResetBits(GPIOB,GPIO_Pin_3); 
+											GPIO_ResetBits(GPIOA,GPIO_Pin_0); 
 
 #define Udp_SendStr  usart1Printf
 void Usart_TIM2_Init(void);										

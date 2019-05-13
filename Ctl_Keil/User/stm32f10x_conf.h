@@ -25,6 +25,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 /* Uncomment/Comment the line below to enable/disable peripheral header file inclusion */
+//sys driver 
 #include "stm32f10x_adc.h"
 // #include "stm32f10x_bkp.h"
 // #include "stm32f10x_can.h"
@@ -48,6 +49,23 @@
 #include "stm32f10x_usart.h"
 // #include "stm32f10x_wwdg.h"
 #include "misc.h" /* High level functions for NVIC and SysTick (add-on to CMSIS functions) */
+//my driver conf
+//#include "my_usart1.h"
+#include "delay.h"   //定时器做延时初始化
+#include "bsp_zn200.h"
+#include "string.h"
+//#include "oled.h"
+#include "mytypedef.h"
+//#include "HMC832.h"
+//#include "func.h"
+#include "ioport.h"
+//#include "bmp.h"
+//#include "key.h"
+//#include "adc.h"
+//#include "myflash.h"
+//#include "stdint.h"
+
+
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/

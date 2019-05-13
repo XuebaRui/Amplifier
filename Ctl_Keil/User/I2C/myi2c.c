@@ -1,5 +1,4 @@
-#include "ioport.h"
-
+#include "myi2c.h"
 /*
 **函数名： IOPort_Init 
 **参数  ： 无
@@ -7,7 +6,7 @@
 **日期	： 2019-05-13
 **作者  ： 王瑞
 */
-void IOPort_Init(void)
+void I2C_GPIOInit(void)
 {
 	/***********衰减IO***************/
 	GPIO_InitTypeDef GPIO_InitStructure;
@@ -23,4 +22,3 @@ void IOPort_Init(void)
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8|GPIO_Pin_11|GPIO_Pin_12;	
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 }
-/************************END OF FILE**********************/
